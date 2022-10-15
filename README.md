@@ -72,7 +72,8 @@ http://localhost:3000
 
 https://github.com/kohei-yoshida/location-based-ar-example/blob/master/src/index.html#L21
 
-東京タワーのロケーションになってるので、 
+東京タワーのロケーションになってるので、
+
 Google MapでGPSで検知できる場所をgps-entity-place属性で指定してあげると文字が表示されます。
 
 ```html
