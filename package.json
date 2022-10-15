@@ -1,0 +1,12 @@
+{
+  "name": "location-based-ar-example",
+  "version": "1.0.0",
+  "description": "Location Based AR Example",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
