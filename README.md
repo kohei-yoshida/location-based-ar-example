@@ -1,2 +1,83 @@
 # location-based-ar-example
-Location Based AR
+
+## Environment
+
+- macos: monterey 12.6
+- node.js: 18.10.0
+- aframe.min.js: 1.3.0
+- docker desktop: 4.12.0
+- docker engine: 20.10.17
+- docker compose: 2.10.2
+
+## WebXR Library
+
+[A-Frame](https://aframe.io/)
+
+## Directory
+
+```txt
+./a-frame-demo1
+├── node_modules
+├── .dockerignore
+├── .gitignore
+├── docker-compose.yaml
+├── package-lock.json
+├── package.json
+├── README.md
+└── src
+    ├── favicon.ico
+    ├── a-frame.html  # A-Frame描画用のHTML
+    └── index.js      # nodeのmainスクリプト
+```
+
+## Usage with docker
+
+start: docker container
+
+```bash
+% docker-compose up -d
+```
+
+end: docker container
+
+```bash
+% docker-compose down
+```
+
+## Usage without docker
+
+start: When specifying from the root directory
+
+```bash
+% node ./src/index.js 
+# > Node.js is listening to PORT:3000
+```
+
+end: (control + c)
+
+```bash
+# > Node.js is listening to PORT:3000
+^C
+```
+
+## View in browser, After Start
+
+```blowser
+http://localhost:3000
+```
+
+## Remark
+
+https://github.com/kohei-yoshida/location-based-ar-example/blob/master/src/index.html#L21
+
+東京タワーのロケーションになってるので、 
+Google MapでGPSで検知できる場所をgps-entity-place属性で指定してあげると文字が表示されます。
+
+```html
+<a-text
+  value="Tokyo Tower"
+  look-at="[gps-camera]"
+  scale="5 5 0"
+  gps-entity-place="latitude: 35.658706880003145; longitude: 139.74542216936783;"
+></a-text>
+```
