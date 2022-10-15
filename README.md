@@ -13,6 +13,8 @@
 
 [A-Frame](https://aframe.io/)
 
+[aframe-look-at-component](https://github.com/matrix-org/aframe-look-at-component)
+
 ## Directory
 
 ```txt
@@ -81,3 +83,5 @@ Google MapでGPSで検知できる場所をgps-entity-place属性で指定して
   gps-entity-place="latitude: 35.658706880003145; longitude: 139.74542216936783;"
 ></a-text>
 ```
+
+![スクリーンショット 2022-10-15 19 19 32](https://user-images.githubusercontent.com/43778602/195981420-f8e65e6a-9052-4ecf-ba16-0458c16fd0b7.png)
