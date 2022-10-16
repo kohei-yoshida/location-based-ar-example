@@ -4,7 +4,8 @@
 
 - macos: monterey 12.6
 - node.js: 18.10.0
-- aframe.min.js: 1.3.0
+- aframe.min.js: 1.2.0
+- aframe-look-at-component 0.8.0
 - docker desktop: 4.12.0
 - docker engine: 20.10.17
 - docker compose: 2.10.2
@@ -27,9 +28,8 @@
 ├── package.json
 ├── README.md
 └── src
-    ├── favicon.ico
-    ├── a-frame.html  # A-Frame描画用のHTML
-    └── index.js      # nodeのmainスクリプト
+    ├── index.html  # a-frame描画用のHTML
+    └── index.js    # nodeのmainスクリプト
 ```
 
 ## Usage with docker
@@ -72,9 +72,7 @@ http://localhost:3000
 
 https://github.com/kohei-yoshida/location-based-ar-example/blob/master/src/index.html#L21
 
-東京タワーのロケーションになってるので、
-
-Google MapでGPSで検知できる場所をgps-entity-place属性で指定してあげると文字が表示されます。
+gps-entity-place属性を指定して、GPSの圏内でアクセスすると文字が表示される。
 
 ```html
 <a-text
@@ -85,4 +83,4 @@ Google MapでGPSで検知できる場所をgps-entity-place属性で指定して
 ></a-text>
 ```
 
-![スクリーンショット 2022-10-15 19 19 32](https://user-images.githubusercontent.com/43778602/195981420-f8e65e6a-9052-4ecf-ba16-0458c16fd0b7.png)
+![GoogleMap](https://user-images.githubusercontent.com/43778602/195981420-f8e65e6a-9052-4ecf-ba16-0458c16fd0b7.png)
